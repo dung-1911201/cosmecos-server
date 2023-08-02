@@ -22,10 +22,10 @@ mongoose
 app.use(express.json());
 //PORT
 
-// // Tuyến đường xử lý yêu cầu đến địa chỉ gốc "/"
-// app.get('/', (req, res) => {
-// 	res.send('Xin chào, đây là trang chủ của ứng dụng!');
-// });
+// Tuyến đường xử lý yêu cầu đến địa chỉ gốc "/"
+app.get('/', (req, res) => {
+	res.send('Xin chào, đây là trang chủ của ứng dụng!');
+});
 
 const PORT = process.env.PORT || 5050;
 
